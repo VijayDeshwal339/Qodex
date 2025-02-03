@@ -1,8 +1,48 @@
-# React + Vite
+# Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a weather dashboard built with React.js that provides real-time weather information, including current weather conditions and a 5-day forecast. It uses the OpenWeather API to fetch weather data, and styled-components for styling.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Displays current weather information including temperature, humidity, and wind speed.
+- 5-day weather forecast with daily temperature and weather conditions.
+- Search functionality to look up weather data for any city.
+- Automatic time display that updates every second.
+- Error handling for invalid city names.
+- Responsive layout that adapts to different screen sizes.
+
+## Tech Stack
+
+- **Frontend**: React.js, styled-components
+- **API**: OpenWeather API
+- **State Management**: Context API
+- **Routing**: React Router
+- **CSS**:  styled-components
+
+## Setup
+
+To set up the project locally, follow these steps:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/VijayDeshwal339/Qodex.git
+cd weather-dashboard
+
+npm install
+
+VITE_OPENWEATHER_API_KEY=your_api_key_here
+
+npm start
+
+
+file structure
+src/
+│
+├── components/          # Reusable components (e.g., SearchBar, WeatherCard)
+├── context/             # React Context for state management
+├── pages/               # Pages (e.g., Home)
+├── styles/              # Global styles using styled-components
+├── App.js               # Main application component
+├── index.js             # Application entry point
+└── .env                 # Environment variables
